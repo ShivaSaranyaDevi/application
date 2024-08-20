@@ -3,6 +3,7 @@ import { Route,Routes } from 'react-router-dom';
 import Application from './Application'
 import Home from './Home'
 import '../Scss/Dashboard.scss';
+import AdminLogin from './AdminLogin';
 
 const Dashboard = () => {
   return (
@@ -14,6 +15,8 @@ const Dashboard = () => {
    <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/application' element={<Application />} />
+      <Route path='/admin' element={<AdminLogin />} />
+
     </Routes>
       </div>
  

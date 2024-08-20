@@ -7,7 +7,6 @@ const Navbar = () => {
       <div className="navbar-brand"><Link to="/">VISION</Link></div>
       <ul className="navbar-menu">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/application">Apply</Link></li>
         <li><Link to="/admin">Admin</Link></li>

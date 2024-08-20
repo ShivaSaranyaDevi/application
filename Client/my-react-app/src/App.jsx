@@ -1,14 +1,17 @@
 import './App.css'
 import Dashboard from './Components/Dashboard.jsx'
-
-import { BrowserRouter} from 'react-router-dom'
+import AdminDashboard from './Components/AdminDashboard.jsx'
+import { BrowserRouter,Route,Routes} from 'react-router-dom'
 
 function App() {
 
 
   return (
     <BrowserRouter>
-    <Dashboard/>
+    <Routes>
+        <Route path="/*" element={<Dashboard />} />
+            <Route path='/AdminDashboard/*' element={<AdminDashboard />} />
+    </Routes>
     </BrowserRouter>
   )
 }
