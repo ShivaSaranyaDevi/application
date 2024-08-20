@@ -1,10 +1,14 @@
-import './MainContent.css';
+import '../Scss/MainContent.scss';
+import { Route,Routes } from 'react-router-dom';
+import Application from './Application'
 
 const MainContent = () => {
   return (
     <main className="main-content">
-      <h1>Welcome to the Dashboard</h1>
-      <p>This is where your main content will go.</p>
+    <Routes>
+      
+      <Route path='/application' element={<Application/>}/>
+    </Routes>
     </main>
   );
 };

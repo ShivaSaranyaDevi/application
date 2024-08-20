@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import MainContent from './MainContent';
-import './Dashboard.scss';
+import '../Scss/Dashboard.scss';
 
 const Dashboard = () => {
   return (

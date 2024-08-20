@@ -1,6 +1,6 @@
-html, body {
+.Application-container {
+  padding: 20px;
   margin: 0;
-  padding: 0;
   height: 100%;
   width: 100%;
   background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMTYtYy0wOF8xLWtzaDZtemEzLmpwZw.jpg');
@@ -8,17 +8,6 @@ html, body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  height: max-content;
-}
-
-
-.Application-container {
-  padding: 20px;
 }
 
 .container {
