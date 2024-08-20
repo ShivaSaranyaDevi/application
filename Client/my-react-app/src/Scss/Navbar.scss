@@ -1,6 +1,6 @@
 .navbar {
-    background-color: #333;
-    color: #fff;
+  background-color: rgb(242, 245, 247);
+  color: #333;
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
@@ -8,6 +8,8 @@
   
   .navbar-brand {
     font-size: 1.5em;
+    margin: 0px 20px;
+
   }
   
   .navbar-menu {
@@ -15,6 +17,8 @@
     display: flex;
     margin: 0;
     padding: 0;
+    margin: 0px 20px;
+
   }
   
   .navbar-menu li {
@@ -22,7 +26,7 @@
   }
   
   .navbar-menu a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
   }
   
