@@ -11,6 +11,10 @@ function App() {
     <Routes>
         <Route path="/*" element={<Dashboard />} />
             <Route path='/AdminDashboard/*' element={<AdminDashboard />} />
+            <Route path='/AdminDashboard/*' element={<AdminDashboard />} />
+            <Route path='/AdminDashboard/*' element={<AdminDashboard />} />
+            <Route path='/AdminDashboard/*' element={<AdminDashboard />} />
+
     </Routes>
     </BrowserRouter>
   )

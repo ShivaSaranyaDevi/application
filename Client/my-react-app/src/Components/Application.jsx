@@ -41,6 +41,8 @@ function Application() {
                 ...prevFormData,
                 [name]: value
             }));
+
+            
         }
     };
 
@@ -80,8 +82,8 @@ function Application() {
                 const dob = new Date(data.DateOfBirth);
                 const formattedDOB = format(dob, 'yyyy-MM-dd');
 
-                setFormData(prevFormData => ({
-                    ...prevFormData,
+                setFormData(formData => ({
+                    ...formData,
                     dateOfBirth: formattedDOB
                 }));
             }

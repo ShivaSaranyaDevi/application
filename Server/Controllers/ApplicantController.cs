@@ -55,8 +55,6 @@ namespace ApplicationData.Controllers
             _context.Application.Add(application);
             _context.SaveChanges();
             return Ok(application);
-
-            
         }
 
             
@@ -76,18 +74,17 @@ namespace ApplicationData.Controllers
 
         [HttpPut("{id}")]
  
-        public ActionResult putdetails(int id, Application application)
+        public ActionResult putdetails(int id, [FromBody]StatusUpdateDTO status)
         {
             var applicant = _context.Application.FirstOrDefault(u => u.ApplicantID == id);
             if (applicant == null)
             {
                 return NotFound();
             }
-            applicant.Status = application.Status;
+            applicant.Status = status.Status;
             _context.Application.Update(applicant);
             _context.SaveChanges();
             return Ok(applicant);
-
 
         }
 
