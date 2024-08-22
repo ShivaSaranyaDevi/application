@@ -28,10 +28,10 @@ const AdminNavbar = ({toggleProfile}) => {
     <nav className="navbar">
       <div className="navbar-brand"><Link to="/AdminDashboard">VISION</Link></div>
       <ul className="navbar-menu">
-        <li><Link to="/AdminDashboard">Home</Link></li>
-        <li><Link to="/AdminDashboard/Applications">Applications</Link></li>
-        <li><Link to="/AdminDashboard/Students">Students</Link></li>
-        <li><img src={data.admin_image} alt="Admin" onClick={toggleProfile}></img></li>
+        <li><Link to="/AdminDashboard" style={{ textDecoration: 'none' }}>Home</Link></li>
+        <li><Link to="/AdminDashboard/Applications" style={{ textDecoration: 'none' }}>Applicants</Link></li>
+        <li><Link to="/AdminDashboard/Students" style={{ textDecoration: 'none' }}>Students</Link></li>
+        <li><img src={data.admin_image} alt="Admin" onClick={toggleProfile} style={{ textDecoration: 'none' }}></img></li>
       </ul>
     </nav>
   );

@@ -49,7 +49,7 @@ function AdminApplications() {
   const handleReject  = async (applicantID) => {
     try {
       await axios.delete(`https://localhost:7221/api/Application/${applicantID}`)
-    
+      setData((data) => data.filter(sts => sts.applicantID !== applicantID));
       
     } catch (error) {
       console.error('Error rejecting application:', error);    }

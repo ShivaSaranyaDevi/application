@@ -25,22 +25,22 @@ function Application() {
     const [error, setError] = useState('');
 
     const handleChange = (e) => {
-        const { name, value, type, files } = e.target;
-        if (type === 'file') {
-            const file = files[0];
-            const reader = new FileReader();
-            reader.onloadend = () => {
+            const { name, value, type, files } = e.target;
+            if (type === 'file') {
+                const file = files[0];
+                const reader = new FileReader();
+                reader.onloadend = () => {
+                    setFormData(prevFormData => ({
+                        ...prevFormData,
+                        [name]: reader.result
+                    }));
+                };
+                reader.readAsDataURL(file);
+            } else {
                 setFormData(prevFormData => ({
                     ...prevFormData,
-                    [name]: reader.result
+                    [name]: value
                 }));
-            };
-            reader.readAsDataURL(file);
-        } else {
-            setFormData(prevFormData => ({
-                ...prevFormData,
-                [name]: value
-            }));
 
             
         }
